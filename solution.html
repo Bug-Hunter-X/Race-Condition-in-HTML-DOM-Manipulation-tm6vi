@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fixed HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Correctly waiting for the DOM to load
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById("myDiv").innerHTML = "This text replaces the original.";
+    });
+  </script>
+</body>
+</html>
